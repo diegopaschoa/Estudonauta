@@ -1,4 +1,3 @@
-<pre>
 <?php
     $banco = new mysqli("localhost", "root", "", "bd_games");
     if($banco->connect_errno){
@@ -11,11 +10,4 @@
     $banco->query("SET character_set_client=utf8");
     $banco->query("SET character_set_results=utf8");
 
-    $busca = $banco->query("select * from generos");
-    if(!$busca){
-        echo "<p>Falha na busca! $banco->error</p>";
-    }else{
-        $reg = $busca->fetch_object();
-        print_r($reg);
-    }
-?>
+
