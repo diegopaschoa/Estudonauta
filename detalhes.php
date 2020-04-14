@@ -12,7 +12,8 @@
         require_once "includes/funcoes.php";
     ?>
     <div id="corpo">
-        <?php
+        <?php 
+            include_once "topo.php"; 
             $c = $_GET['cod'] ?? 0;
             $busca = $banco->query("select * from jogos where cod='$c'");
             
@@ -40,5 +41,6 @@
         </table>
         <a href="index.php"><img src="icones/icoback.png"></a>
     </div>
+    <?php include_once "rodape.php"  ?>
 </body>
 </html>
