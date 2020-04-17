@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de Jogos</title>
     <link rel="stylesheet" href="estilos/estilo.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <?php
@@ -19,7 +20,6 @@
         <?php include_once "topo.php"; ?>
 
         <h1>Escolha seu jogo</h1>
-
         <form method="get" id="busca" action="index.php">
             Ordenar: 
             <a href="index.php?o=n&c=<?php echo $chave; ?>">Nome</a> | 

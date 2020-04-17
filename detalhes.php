@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título da Página</title>
     <link rel="stylesheet" href="estilos/estilo.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <?php
@@ -39,7 +40,7 @@
 
             ?>
         </table>
-        <a href="index.php"><img src="icones/icoback.png"></a>
+        <?php echo voltar(); ?>
     </div>
     <?php include_once "rodape.php"  ?>
 </body>
