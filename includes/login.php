@@ -29,6 +29,10 @@ function cripto($senha){
     return $c;
 }
 
-
+function logout(){
+    unset($_SESSION['user']);
+    unset($_SESSION['nome']);
+    unset($_SESSION['tipo']);
+}
 
 ?>
